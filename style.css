@@ -68,7 +68,7 @@ h1,.statement,.feature blockquote{text-wrap:balance}
 .hero .brand-h1{margin:0;font-size:0;line-height:0;max-width:none}
 .hero .lead{color:var(--on-dark);font-size:clamp(18px,2vw,23px);line-height:1.55;max-width:33em;margin-top:0}
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.facts-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--on-dark-rule)}
+.facts-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--on-dark-rule)}
 .fact{padding:26px 24px 32px 0}
 .fact+.fact{padding-left:24px;border-left:1px solid var(--on-dark-rule)}
 .fact b{display:block;font:700 34px/1 var(--display);color:var(--on-dark);letter-spacing:-.01em}
