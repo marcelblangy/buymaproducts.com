@@ -68,7 +68,7 @@ h1,.statement,.feature blockquote{text-wrap:balance}
 .hero .brand-h1{margin:0;font-size:0;line-height:0;max-width:none}
 .hero .lead{color:var(--on-dark);font-size:clamp(18px,2vw,23px);line-height:1.55;max-width:33em;margin-top:0}
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.facts-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--on-dark-rule)}
+.facts-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--on-dark-rule)}
 .fact{padding:26px 24px 32px 0}
 .fact+.fact{padding-left:24px;border-left:1px solid var(--on-dark-rule)}
 .fact b{display:block;font:700 34px/1 var(--display);color:var(--on-dark);letter-spacing:-.01em}
@@ -113,9 +113,11 @@ h1,.statement,.feature blockquote{text-wrap:balance}
 .note{margin-top:22px;color:var(--muted);font-size:15.5px}
 
 /* reviews */
-.reviews-top{display:grid;grid-template-columns:1fr 2.1fr;gap:clamp(24px,4vw,56px);align-items:end}
-.score b{display:block;font:700 clamp(62px,8vw,98px)/.9 var(--display);color:var(--ink);letter-spacing:-.035em}
-.score .stars{display:block;font-size:20px;letter-spacing:4px;margin:14px 0 6px}
+.reviews-top{display:grid;grid-template-columns:1.2fr 1.8fr;gap:clamp(24px,4vw,56px);align-items:end}
+.scores{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.score small{white-space:nowrap}
+.score b{display:block;font:700 clamp(52px,6vw,76px)/.9 var(--display);color:var(--ink);letter-spacing:-.035em}
+.score .stars{display:block;font-size:17px;letter-spacing:3px;margin:12px 0 6px}
 .score small{display:block;color:var(--muted);font-size:15px}
 .feature{margin:0}
 .feature blockquote{margin:0;font:500 clamp(24px,2.9vw,36px)/1.22 var(--display);color:var(--ink);letter-spacing:-.012em}
@@ -170,6 +172,10 @@ h1,.statement,.feature blockquote{text-wrap:balance}
 @media (max-width:960px){
   .sec-grid,.reviews-top,.company-grid,.prose{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr;row-gap:40px}
+  .facts-row{grid-template-columns:1fr 1fr}
+  .fact:nth-child(odd){padding-left:0;border-left:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--on-dark-rule)}
+  .scores{max-width:520px}
   .quotes{grid-template-columns:1fr 1fr;row-gap:30px}
   .menu{gap:20px}
 }
